@@ -1,0 +1,29 @@
+Pre-installation steps:
+1. initialize pdc path if not exist to "C:\Users\<username>\Documents\PDC_(2048 | 2094)" - done
+2. give pdc folder the attribs of +h +s - done
+2. go to the pdc folder - done
+
+Installation steps:
+1.  download the git repository - done
+2.  unzip - done
+3.  install windows subsystem for linux - done
+4.  setup wsl - done
+7.  update and upgrade apt with sudo perms
+8.  install python3-venv
+9.  inside the git repo, run python3 -m venv .venv - done
+10. source the venv activation file .venv/bin/activate
+12. run util.sh install
+13. run util.sh build
+14. edit ~/.bashrc to automatically run built file
+15. exit the ubuntu subsystem shell
+16. inside the git repo container folder, install nircmd
+17. create a batch file to run `nircmd.exe exec hide wsl`
+
+
+18. save a shortcut of that batch file to the shell:startup folder with the flags "window=minimize"
+19. run the batch file
+
+Manually:
+1. install python3-venv
+2. start the script after reboot
+3. create shortcut of start.bat in startup location

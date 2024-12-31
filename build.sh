@@ -1,0 +1,1 @@
+GOARCH=amd64 GOOS=windows go build -o out/main.exe main.go # -ldflags "-H windowsgui"
